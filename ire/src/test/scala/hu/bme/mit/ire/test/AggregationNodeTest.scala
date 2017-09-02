@@ -40,7 +40,7 @@ class AggregationNodeTest(_system: ActorSystem) extends TestKit(_system) with Im
       ))
       counter ! ChangeSet(negative = tupleBag(odin))
       expectMsg(ChangeSet(
-        positive = tupleBag(tuple("male", "Asgard", 1)),
+        positive = tupleBag(tuple("male", "Assguard", 1)),
         negative = tupleBag(tuple("male", "Asgard", 2))
       ))
       counter ! ChangeSet(positive = tupleBag(freya))
